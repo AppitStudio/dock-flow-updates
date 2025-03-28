@@ -3,12 +3,12 @@
     <channel>
         <title>DockFlow</title>
         <item>
-            <title>0.8</title>
-            <pubDate>Fri, 28 Mar 2025 17:40:34 +0200</pubDate>
-            <sparkle:version>0.8</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <title>1.0</title>
+            <pubDate>Fri, 28 Mar 2025 22:38:19 +0200</pubDate>
+            <sparkle:version>1.0</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg" length="6178597" type="application/octet-stream" sparkle:edSignature="I6CSICqCaNFOFgDY+bUYywPYL22rrU1nQYGbgkH/nQKgV5TGhndNydRtqwHIGo8euioRcZnpnrKJyrtP6hFoAQ=="/>
+            <enclosure url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg" length="6191921" type="application/octet-stream" sparkle:edSignature="0BB6zXKz6ZQCThIm/CGTUDRrlvhPavCHi7au5llmR4bsbynNvZo7ExL8zbld04GBp+4Q0rCkRRtF4NsLol3XAQ=="/>
         </item>
     </channel>
 </rss>
