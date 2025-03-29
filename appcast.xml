@@ -3,14 +3,18 @@
     <channel>
         <title>DockFlow</title>
         <item>
-            <title>1.1</title>
-            <pubDate>Sat, 29 Mar 2025 22:18:13 +0200</pubDate>
-            <sparkle:version>1.1</sparkle:version>
-            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <title>1.2</title>
+            <pubDate>Sat, 29 Mar 2025 22:51:39 +0200</pubDate>
+            <sparkle:version>1.2</sparkle:version>
+            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in DockFlow 1.1</h2>
+                <h2>What's New in DockFlow 1.2</h2>
+                <ul>
+                    <li>Minor bug fixes and stability improvements</li>
+                </ul>
 
+                <h2>What's New in DockFlow 1.1</h2>
                 <h3>Major Improvements</h3>
                 <ul>
                     <li><strong>Dock Preset Management</strong>
@@ -33,8 +37,8 @@
             ]]></description>
             <enclosure
                 url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
-                length="6203611" type="application/octet-stream"
-                sparkle:edSignature="e3uisR1kX5gLws9/bgMfMiWCpmKt3GfJjGs/X2qZ6JrynZoBeBcNQi/lhivCZ3f5yjFwotnTdmblJtEniqL6DA==" />
+                length="6203675" type="application/octet-stream"
+                sparkle:edSignature="Mg/43iiW4VAUN6eOGfptXqdQbjHbGFIJw/fQg2+U9BW7r/f89RaA4Et8MUeIU3O+0zrLj5mOprJ6VTs22FiNBg==" />
         </item>
     </channel>
 </rss>
