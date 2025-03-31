@@ -3,37 +3,64 @@
     <channel>
         <title>DockFlow</title>
         <item>
-            <title>1.3</title>
-            <pubDate>Sun, 30 Mar 2025 20:58:29 +0300</pubDate>
-            <sparkle:version>1.3</sparkle:version>
-            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
+            <title>1.4</title>
+            <pubDate>Mon, 31 Mar 2025 21:38:42 +0300</pubDate>
+            <sparkle:version>1.4</sparkle:version>
+            <sparkle:shortVersionString>1.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in DockFlow 1.3</h2>
-                <h3>Major Improvements</h3>
+                <h2>What's New in DockFlow 1.4</h2>
+                <h3>Major New Feature</h3>
                 <ul>
-                    <li><strong>Advanced Folder Dock Support</strong>
+                    <li><strong>Dock Spacers Support</strong>
                         <ul>
-                            <li>Complete folder management directly in DockFlow</li>
-                            <li>Create custom presets for different folder configurations</li>
-                            <li>Fine-tune folder settings for each preset</li>
-                            <li>Seamlessly switch between folder layouts</li>
-                        </ul>
-                    </li>
-
-                    <li><strong>Enhanced Visual Experience</strong>
-                        <ul>
-                            <li>Refined color scheme for better visual harmony</li>
-                            <li>Improved interface elements for a more polished look</li>
-                            <li>Better visual feedback for user interactions</li>
+                            <li>Added support for both regular and small spacers in dock layouts</li>
+                            <li>Ability to capture existing spacers when importing current dock layout</li>
+                            <li>New dedicated buttons to add spacers directly from DockFlow's interface</li>
+                            <li>Full support for saving and restoring spacers in presets</li>
                         </ul>
                     </li>
                 </ul>
+
+                <h3>UI Enhancements</h3>
+                <ul>
+                    <li><strong>Improved App Management</strong>
+                        <ul>
+                            <li>Streamlined app addition process with a single "Add App" button</li>
+                            <li>Clear visual separation between app and spacer controls</li>
+                            <li>Enhanced button layout with app management on the left and spacer controls on the right</li>
+                            <li>Added a plus icon to the "Add App" button for better visual clarity</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Technical Improvements</h3>
+                <ul>
+                    <li><strong>Enhanced URL Processing</strong>
+                        <ul>
+                            <li>Better handling of paths with spaces</li>
+                            <li>Proper URL encoding/decoding</li>
+                            <li>Improved file existence validation</li>
+                        </ul>
+                    </li>
+                    <li>Implemented a more robust system for tracking apps in the dock</li>
+                    <li>Added detailed logging for easier troubleshooting</li>
+                </ul>
+
+                <h3>Other Improvements</h3>
+                <ul>
+                    <li>Better error messages for invalid apps</li>
+                    <li>Improved validation of app paths before adding to presets</li>
+                    <li>More consistent handling of dock items</li>
+                    <li>Enhanced preset saving and loading reliability</li>
+                </ul>
+
+                <p><em>This update introduces spacer support to DockFlow, making it a complete solution for managing your dock layout, along with various usability improvements.</em></p>
             ]]></description>
             <enclosure
                 url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
-                length="6295038" type="application/octet-stream"
-                sparkle:edSignature="8vlSUE4ov2obVbGqGcikCppeS2NweIhhiiO/rwAR6kj2wayBNvUtVJobptRAXyy1/S/K2KmOYFya/nH9Kox9Bg==" />
+                length="6305136" type="application/octet-stream"
+                sparkle:edSignature="Vis4kJDm0v+i+YewvPcsaauBQPuz0aowhfALEtrZaAGX3qvWYHF38KSJm0gSdwwWHKePP3NfJAuAj5t1UI3lAg==" />
         </item>
     </channel>
 </rss>
