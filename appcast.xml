@@ -25,8 +25,8 @@
             ]]></description>
             <enclosure
                 url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
-                length="6303969" type="application/octet-stream"
-                sparkle:edSignature="8depD5fjldIm95eFEJswpZALB/SperpKtsFDTa1DPG1du/oLNoDVUEsc5g36DtkLGReJhppRAKxY825YeDlLAQ==" />
+                length="6305891" type="application/octet-stream"
+                sparkle:edSignature="qgdCi9L1439O2/Q7sbLIyQ5/N7hae+XhQlWr4zFeVOpGzlzxI8el7PvnY4f2i8OA666SiiI+Ef0IDgMfF2KPDQ==" />
         </item>
     </channel>
 </rss>
