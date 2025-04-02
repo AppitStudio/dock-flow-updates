@@ -3,13 +3,13 @@
     <channel>
         <title>DockFlow</title>
         <item>
-            <title>1.5</title>
-            <pubDate>Tue, 01 Apr 2025 22:08:11 +0300</pubDate>
-            <sparkle:version>1.5</sparkle:version>
-            <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+            <title>1.6</title>
+            <pubDate>Wed, 02 Apr 2025 06:32:32 +0300</pubDate>
+            <sparkle:version>1.6</sparkle:version>
+            <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in DockFlow 1.5</h2>
+                <h2>What's New in DockFlow 1.5 + 1.6</h2>
                 <h3>Bug Fixes</h3>
                 <ul>
                     <li><strong>License Key Validation</strong>
@@ -25,8 +25,8 @@
             ]]></description>
             <enclosure
                 url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
-                length="6305891" type="application/octet-stream"
-                sparkle:edSignature="qgdCi9L1439O2/Q7sbLIyQ5/N7hae+XhQlWr4zFeVOpGzlzxI8el7PvnY4f2i8OA666SiiI+Ef0IDgMfF2KPDQ==" />
+                length="6305281" type="application/octet-stream"
+                sparkle:edSignature="FecNcg7+l2eRHfqxsZwVMty6W5xmfZm3xyLUgSLFFBxac+a1q3ADOzNg9bLVY6kV6YJEilLVLwmpTdnTCnvlBA==" />
         </item>
     </channel>
 </rss>
