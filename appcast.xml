@@ -3,20 +3,18 @@
     <channel>
         <title>DockFlow</title>
         <item>
-            <title>1.6</title>
-            <pubDate>Wed, 02 Apr 2025 06:32:32 +0300</pubDate>
-            <sparkle:version>1.6</sparkle:version>
-            <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+            <title>1.7</title>
+            <pubDate>Wed, 02 Apr 2025 20:37:08 +0300</pubDate>
+            <sparkle:version>1.7</sparkle:version>
+            <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in DockFlow 1.5 + 1.6</h2>
+                <h2>What's New in DockFlow 17</h2>
                 <h3>Bug Fixes</h3>
                 <ul>
                     <li><strong>License Key Validation</strong>
                         <ul>
-                            <li>Fixed validation issues with license key input</li>
-                            <li>Improved error handling for invalid license keys</li>
-                            <li>Enhanced user feedback during license validation process</li>
+                            <li>Fixed validation issues with license key re validation</li>
                         </ul>
                     </li>
                 </ul>
@@ -25,8 +23,8 @@
             ]]></description>
             <enclosure
                 url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
-                length="6305281" type="application/octet-stream"
-                sparkle:edSignature="FecNcg7+l2eRHfqxsZwVMty6W5xmfZm3xyLUgSLFFBxac+a1q3ADOzNg9bLVY6kV6YJEilLVLwmpTdnTCnvlBA==" />
+                length="6305845" type="application/octet-stream"
+                sparkle:edSignature="AijIpo+Xbas+JTTsUYXNZn0ZDZtg/tRJmWT+luKTKBQhRPcj7OSCntcmua6D1LVauvhcXwsGIXWkVIWvnU5CCA==" />
         </item>
     </channel>
 </rss>
