@@ -3,28 +3,30 @@
     <channel>
         <title>DockFlow</title>
         <item>
-            <title>1.7</title>
-            <pubDate>Wed, 02 Apr 2025 20:37:08 +0300</pubDate>
-            <sparkle:version>1.7</sparkle:version>
-            <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
+            <title>1.8</title>
+            <pubDate>Thu, 03 Apr 2025 22:15:53 +0300</pubDate>
+            <sparkle:version>1.8</sparkle:version>
+            <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>
+                https://appitstudio.github.io/dock-flow-updates/release-notes.html</sparkle:fullReleaseNotesLink>
             <description><![CDATA[
-                <h2>What's New in DockFlow 17</h2>
-                <h3>Bug Fixes</h3>
+                <h2>What's New in DockFlow 1.8</h2>
+                <h3>Add about and support link</h3>
                 <ul>
-                    <li><strong>License Key Validation</strong>
+                    <li><strong>Add about and support link</strong>
                         <ul>
-                            <li>Fixed validation issues with license key re validation</li>
+                            <li>Add about and support link to the app</li>
                         </ul>
                     </li>
                 </ul>
 
-                <p><em>This update focuses on improving the license key validation process to ensure a smoother user experience.</em></p>
+            <p><em>Also trying new release notes format</em></p>
             ]]></description>
             <enclosure
                 url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
-                length="6305845" type="application/octet-stream"
-                sparkle:edSignature="AijIpo+Xbas+JTTsUYXNZn0ZDZtg/tRJmWT+luKTKBQhRPcj7OSCntcmua6D1LVauvhcXwsGIXWkVIWvnU5CCA==" />
+                length="6312489" type="application/octet-stream"
+                sparkle:edSignature="9BUkS80nJiHNXjviBljW2VO/EtI/CxT9dpY5oWUXXzev85Tc5R6b/S0zJEKzqCi6srCTswtareRObhKoMkNwCw==" />
         </item>
     </channel>
 </rss>
