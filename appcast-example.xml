@@ -8,6 +8,8 @@
             <sparkle:version>1.12</sparkle:version>
             <sparkle:shortVersionString>1.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <sparkle:fullReleaseNotesLink>
+                https://appitstudio.github.io/dock-flow-updates/release-notes.html</sparkle:fullReleaseNotesLink>
             <description><![CDATA[
                 <h2>What's New in DockFlow 1.12</h2>
                 <h3>Major Improvements</h3>

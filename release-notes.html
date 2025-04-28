@@ -79,6 +79,51 @@
 </head>
 
 <body>
+    <div data-sparkle-version="1.13">
+        <h2>What's New in DockFlow 1.13</h2>
+        <h3>Major New Feature</h3>
+        <ul>
+            <li><strong>DockFlowCLI</strong>
+                <ul>
+                    <li>New command-line interface for advanced users and integrations</li>
+                    <li>Control DockFlow and manage presets directly from Terminal</li>
+                    <li>Apply any preset via simple command-line commands</li>
+                    <li>Get a list of available presets with IDs for easy reference</li>
+                    <li>View currently active dock items</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Core Improvements</h3>
+        <ul>
+            <li><strong>Enhanced Core Architecture</strong>
+                <ul>
+                    <li>Major refactoring of core functionality for better stability and performance</li>
+                    <li>Direct access to dock configuration database for more reliable operations</li>
+                    <li>Smart detection of dockutil availability for improved dock manipulation</li>
+                    <li>Fallback mechanisms using defaults command when needed</li>
+                </ul>
+            </li>
+            <li><strong>Advanced Dock Item Management</strong>
+                <ul>
+                    <li>Enhanced folder stack manipulation with detailed settings control</li>
+                    <li>Improved spacer handling with distinct types (regular and small)</li>
+                    <li>Better path handling with robust URL encoding/decoding</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>CLI Commands</h3>
+        <ul>
+            <li><code>dockflowcli list</code> - Display all available presets with their IDs</li>
+            <li><code>dockflowcli apply --name "Preset Name"</code> - Apply a preset by name</li>
+            <li><code>dockflowcli apply --id 5</code> - Apply a preset by its ID number</li>
+            <li><code>dockflowcli get-apps</code> - List all apps currently in your Dock</li>
+        </ul>
+
+        <p><em>This update lays the groundwork for future integrations with popular macOS productivity apps. Stay tuned
+                for more exciting developments in the DockFlow ecosystem!</em></p>
+    </div>
     <div data-sparkle-version="1.12">
         <h2>What's New in DockFlow 1.12</h2>
         <h3>Major Improvements</h3>
