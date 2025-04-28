@@ -21,6 +21,7 @@
                             <li>Apply any preset via simple command-line commands</li>
                             <li>Get a list of available presets with IDs for easy reference</li>
                             <li>View currently active dock items</li>
+                            <li>Access the command line running: <code>/Applications/DockFlow.app/Contents/MacOS/DockFlowCLI --help</code></li>
                         </ul>
                     </li>
                 </ul>
