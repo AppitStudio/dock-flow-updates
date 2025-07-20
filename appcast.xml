@@ -30,7 +30,8 @@
                 <h3>Thank You!</h3>
                 <p>We're excited to bring you these improvements and appreciate your feedback and support. Enjoy an even smoother DockFlow experience!</p>
             ]]></description>
-            <enclosure url="https://appitstudio.github.io/dock-flow-updates/DockFlow.dmg"
+            <enclosure
+                url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
                 length="21828574" type="application/octet-stream"
                 sparkle:edSignature="Jd6S02Am3cVrNued6mNhy0HkClSm+2IZ46KG85kyyCvy0zQAjNVdV29AW6YmRPv7h+9sQy2hXNpjvcDtRuEhBw==" />
         </item>
