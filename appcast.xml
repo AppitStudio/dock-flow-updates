@@ -25,7 +25,8 @@
                 <p>This minor update focuses on providing you with a more stable and reliable DockFlow experience. We appreciate
                     your continued support and feedback!</p>
             ]]></description>
-            <enclosure url="https://appitstudio.github.io/dock-flow-updates/DockFlow.dmg"
+            <enclosure
+                url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
                 length="22067132" type="application/octet-stream"
                 sparkle:edSignature="H3ok+HoxXFF9c8L0Bgt+rxy0SM6FnFFXVJCoOkqisTNqhqgz5nTg5ifkW0Hgr/YD8IItC7CvmFn1C4SoP2i1AA==" />
         </item>
