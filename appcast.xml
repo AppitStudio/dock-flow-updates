@@ -3,27 +3,27 @@
     <channel>
         <title>DockFlow</title>
         <item>
-            <title>1.46</title>
-            <pubDate>Thu, 07 Aug 2025 22:28:07 +0300</pubDate>
-            <sparkle:version>1.46</sparkle:version>
-            <sparkle:shortVersionString>1.46</sparkle:shortVersionString>
+            <title>1.48</title>
+            <pubDate>Mon, 18 Aug 2025 22:48:39 +0300</pubDate>
+            <sparkle:version>1.48</sparkle:version>
+            <sparkle:shortVersionString>1.48</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <sparkle:fullReleaseNotesLink>
                 https://appitstudio.github.io/dock-flow-updates/release-notes.html</sparkle:fullReleaseNotesLink>
             <description><![CDATA[
-                <h2>What's New in DockFlow 1.46</h2>
-                <h3>Urgent Hotfix</h3>
+                <h2>What's New in DockFlow 1.48</h2>
+                <h3>Bug Fixes & Performance Improvements</h3>
                 <ul>
-                    <li><strong>Critical stability fix:</strong> Resolved a regression introduced in 1.45 that caused a buggy experience and instability for some users.</li>
-                    <li><strong>Performance:</strong> Faster startup and smoother background operation.</li>
-                    <li><strong>Recommended update:</strong> We recommend all users update to 1.46 for the most stable, reliable experience.</li>
+                    <li><strong>Bug fixes:</strong> Resolved several small bugs that were affecting user experience.</li>
+                    <li><strong>Performance improvements:</strong> Enhanced overall app performance for faster and smoother operation.</li>
+                    <li><strong>Stability enhancements:</strong> General improvements to app stability and reliability.</li>
                 </ul>
-                <p>Thank you for your patience and feedback.</p>
+                <p>Thank you for your continued support and feedback.</p>
             ]]></description>
             <enclosure
                 url="https://github.com/AppitStudio/dock-flow-updates/releases/download/prod/DockFlow.dmg"
-                length="25212367" type="application/octet-stream"
-                sparkle:edSignature="yoF+Gw+tJxD/9D9Qb5/kVgOmgQ9/JSdz+xL2ZbFCI3UFRMthExomXFukN+uru6llJRGuPQCQ/em4avHADgOlAQ==" />
+                length="25219126" type="application/octet-stream"
+                sparkle:edSignature="CHtTcTqs2Zki9Z5z8/fV9mk97Ayxix1Sf8TEZBX6ZKFIP/Y7fsm8aaYy48ir5i4c0l0H8eJ85ICZRyZut8r5Aw==" />
         </item>
     </channel>
 </rss>
