@@ -29,7 +29,7 @@
                 </ul>
                 <p><em>Thank you for your continued support and feedback!</em></p>
             ]]></description>
-            <enclosure url="https://github.com/AppitStudio/dock-flow-updates/releases/download/v1.57/DockFlow.dmg" length="26399376" type="application/octet-stream" sparkle:edSignature="ifztqobWWv1Ryx7pojVDZFgy237VTLI9WbHmtbeejXk/Hpmc42317tTEsvZ+cVUPj3Q2d4M1RdF2u3mFiI5UDw=="/>
+            <enclosure url="https://github.com/AppitStudio/dock-flow-updates/releases/download/V1.57/DockFlow.dmg" length="26399376" type="application/octet-stream" sparkle:edSignature="ifztqobWWv1Ryx7pojVDZFgy237VTLI9WbHmtbeejXk/Hpmc42317tTEsvZ+cVUPj3Q2d4M1RdF2u3mFiI5UDw=="/>
         </item>
     </channel>
 </rss>
