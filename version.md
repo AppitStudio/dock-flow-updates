@@ -1,5 +1,7 @@
-VERSION: 1.69
+VERSION: 1.70
 DETAILS:
 
-bug fix: Fixed team license validation failing intermittently under certain network conditions
-bug fix: Resolved minor issues that could cause unexpected behavior in specific edge cases
+improved: Settings is now accessible directly through the menu bar dropdown
+improved: Relocate Locked Dock is now accessible directly through the menu bar
+bug fix: Fixed leader-key hotkey sequences causing app crashes in certain situations
+bug fix: Fixed "Show app" in dropdown menu causing app crashes due to changes in previous version
