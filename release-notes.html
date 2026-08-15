@@ -79,6 +79,44 @@
 </head>
 
 <body>
+    <div data-sparkle-version="1.76">
+        <h2>What's New in DockFlow 1.76</h2>
+        <h3>New Features</h3>
+        <ul>
+            <li><strong>ExtraDock 5 Support</strong> – DockFlow now works with the all-new ExtraDock 5. Hide and show
+                your extra docks per preset just like before — DockFlow detects which version of ExtraDock you have and
+                talks to it automatically. ExtraDock 4 remains fully supported.</li>
+            <li><strong>Richer ExtraDock Previews</strong> – The per-preset ExtraDock preview now shows files and
+                system items with their own icons, alongside apps, folders, and widgets.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <ul>
+            <li><strong>Rebuilt Focus Integration</strong> – The macOS Focus integration has been rebuilt from the
+                ground up as a dedicated system extension. Presets linked to a Focus now switch reliably every time —
+                including after your Mac has been asleep or DockFlow has been idle in the background.</li>
+            <li><strong>More Dependable ExtraDock Switching</strong> – Dock visibility changes are now sent to
+                ExtraDock 5 as a single confirmed request with automatic retries, so rapid preset switches no longer
+                risk leaving docks in the wrong state.</li>
+            <li><strong>Automatic ExtraDock Recovery</strong> – If ExtraDock restarts or gets out of sync, DockFlow now
+                automatically re-applies the dock visibility for your current preset.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+            <li><strong>Focus Filter Loading in System Settings</strong> – Fixed an issue where adding the DockFlow
+                Focus Filter in System Settings could show "Could not load Focus Filter."</li>
+            <li><strong>Focus Preset Picker on macOS 26.5</strong> – Worked around a macOS 26.5 issue where the preset
+                picker in the Focus filter sheet showed stuck or duplicate checkmarks and wouldn't keep your selection.
+                Note: Focus filters now reference presets by name, so if you rename a preset you'll need to re-select
+                it in your Focus filter.</li>
+            <li><strong>Stale ExtraDock Lists in Presets</strong> – Per-preset ExtraDock settings now clean up docks
+                that no longer exist, and newly added docks stay hidden until you switch them on — no more surprise
+                docks appearing after an ExtraDock update.</li>
+            <li><strong>ExtraDock Sync for the Active Preset</strong> – Re-applying the currently active preset (with
+                "skip if already active" enabled) now still syncs your ExtraDock visibility instead of skipping
+                it.</li>
+        </ul>
+        <p><em>Thank you for your continued support and feedback!</em></p>
+    </div>
     <div data-sparkle-version="1.72">
         <h2>What's New in DockFlow 1.72</h2>
         <h3>Bug Fixes</h3>
