@@ -1,0 +1,50 @@
+name: Validate and register appcast releases
+
+on:
+  pull_request:
+    paths:
+      - appcast.xml
+      - scripts/appcast_releases.rb
+      - .github/workflows/appcast-releases.yml
+  push:
+    branches: [main]
+    paths:
+      - appcast.xml
+      - scripts/appcast_releases.rb
+      - .github/workflows/appcast-releases.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - name: Validate feed and append-only history
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            ruby scripts/appcast_releases.rb --previous-ref "$BASE_SHA"
+          elif [ "$EVENT_NAME" = "push" ] && [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]; then
+            ruby scripts/appcast_releases.rb --previous-ref "$BEFORE_SHA"
+          else
+            ruby scripts/appcast_releases.rb
+          fi
+
+  register:
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Register retained releases with Keyper
+        env:
+          KEYPER_RELEASE_TOKEN: ${{ secrets.KEYPER_RELEASE_TOKEN }}
+        run: ruby scripts/appcast_releases.rb --register
