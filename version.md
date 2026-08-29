@@ -1,12 +1,12 @@
-VERSION: 1.76
+VERSION: 1.77
 DETAILS:
 
-new: DockFlow now works with the all-new ExtraDock 5 — it detects which version of ExtraDock you have and talks to it automatically; ExtraDock 4 remains fully supported
-new: The per-preset ExtraDock preview now shows files and system items with their own icons, alongside apps, folders, and widgets
-improved: The macOS Focus integration has been rebuilt as a dedicated system extension so presets linked to a Focus switch reliably every time, including after sleep or idle
-improved: Dock visibility changes are sent to ExtraDock 5 as a single confirmed request with automatic retries, so rapid preset switches no longer leave docks in the wrong state
-improved: If ExtraDock restarts or gets out of sync, DockFlow automatically re-applies the dock visibility for your current preset
-bug fix: Fixed an issue where adding the DockFlow Focus Filter in System Settings could show "Could not load Focus Filter"
-bug fix: Worked around a macOS 26.5 issue where the preset picker in the Focus filter sheet showed stuck or duplicate checkmarks and wouldn't keep your selection (Focus filters now reference presets by name — re-select after renaming a preset)
-bug fix: Per-preset ExtraDock settings now clean up docks that no longer exist, and newly added docks stay hidden until you switch them on
-bug fix: Re-applying the currently active preset (with "skip if already active" enabled) now still syncs ExtraDock visibility instead of skipping it
+improved: Switching presets quickly one after another now jumps straight to the last one you picked instead of working through every switch in turn.
+improved: The behind-the-scenes work DockFlow does to rebuild your Dock now gives up and cleans itself up if it takes too long, so the app can't sit there waiting.
+bug fix: Clicking DockFlow in the Dock now always brings the main window to the front — even when Settings or an import window is already open, or the window was minimized.
+bug fix: Closing the main window and opening it again now reliably brings back the same window instead of leaving you with nothing on screen.
+bug fix: Folders, files, and links in a preset now keep the exact order you put them in. Presets whose order got scrambled by an older version are quietly repaired the next time DockFlow starts.
+bug fix: Moving items around in a preset now updates the list instantly instead of taking a moment to catch up.
+bug fix: Removing a folder or file from a preset no longer shuffles the items that remain.
+bug fix: Preset contents are now saved in a single step. If something goes wrong your preset is left exactly as it was and DockFlow tells you, instead of half-saving the change.
+bug fix: If applying a preset doesn't fully go through, DockFlow no longer overwrites the Dock it saved for you beforehand.
