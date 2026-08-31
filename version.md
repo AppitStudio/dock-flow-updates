@@ -1,4 +1,4 @@
-VERSION: 1.79
+VERSION: 1.80
 DETAILS:
 
-improved: Authentication flow improved.
+improved: License authentication flow improved.
