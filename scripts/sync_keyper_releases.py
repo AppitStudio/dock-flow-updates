@@ -25,6 +25,7 @@ class Release:
     version: str
     build: str
     released_at: datetime
+    download_url: str
 
 
 def required_text(item: ET.Element, path: str, label: str) -> str:
@@ -80,12 +81,20 @@ def load_releases(appcast_path: Path) -> list[Release]:
         enclosure = item.find("enclosure")
         if enclosure is None:
             raise ValueError(f"{version} is missing its enclosure")
-        if not enclosure.get("url", "").startswith("https://"):
+        download_url = enclosure.get("url", "").strip()
+        if not download_url.startswith("https://"):
             raise ValueError(f"{version} enclosure must use HTTPS")
         if not enclosure.get(f"{{{SPARKLE_NAMESPACE}}}edSignature", "").strip():
             raise ValueError(f"{version} is missing its EdDSA signature")
 
-        releases.append(Release(version=version, build=build, released_at=released_at))
+        releases.append(
+            Release(
+                version=version,
+                build=build,
+                released_at=released_at,
+                download_url=download_url,
+            )
+        )
 
     return releases
 
@@ -95,6 +104,7 @@ def register_release(endpoint: str, token: str, release: Release) -> int:
         {
             "version": release.version,
             "released_at": release.released_at.isoformat(),
+            "download_url": release.download_url,
         }
     ).encode("utf-8")
     request = urllib.request.Request(
