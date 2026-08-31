@@ -1,0 +1,37 @@
+name: Validate and register releases
+
+on:
+  pull_request:
+    paths:
+      - appcast.xml
+      - scripts/sync_keyper_releases.py
+      - .github/workflows/register-keyper-releases.yml
+  push:
+    branches:
+      - main
+    paths:
+      - appcast.xml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: keyper-release-sync-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate-and-register:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Validate retained appcast metadata
+        run: python3 scripts/sync_keyper_releases.py --appcast appcast.xml --validate-only
+
+      - name: Register retained releases with Keyper
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          KEYPER_RELEASE_TOKEN: ${{ secrets.KEYPER_RELEASE_TOKEN }}
+          KEYPER_RELEASE_ENDPOINT: ${{ vars.KEYPER_RELEASE_ENDPOINT }}
+        run: python3 scripts/sync_keyper_releases.py --appcast appcast.xml
