@@ -79,6 +79,24 @@
 </head>
 
 <body>
+    <div data-sparkle-version="1.82">
+        <h2>What's New in DockFlow 1.82</h2>
+        <h3>New Features</h3>
+        <ul>
+            <li><strong>Control ExtraDock through Talk</strong> – Presets can now show and hide ExtraDock docks over the Talk SDK instead of the legacy bridge, with both ExtraDock 4 and ExtraDock 5. Open Settings → Talk Integrations, click Connect… on the ExtraDock card, press Start Pairing in ExtraDock, compare the verification code in both apps and approve in ExtraDock. Access is saved per ExtraDock generation and reconnects on later launches without a new pairing. Requires ExtraDock 4.3.18 or ExtraDock 5.0.9 or later.</li>
+            <li><strong>Live dock updates</strong> – With Talk connected, DockFlow receives ExtraDock's dock list and changes as they happen, so presets always act on the current docks.</li>
+            <li><strong>Apps that can use DockFlow</strong> – Settings → Talk Integrations lists the apps allowed to control your presets with an Allowed / Needs attention status per app, plus Permissions… and Remove…. In the consent panel, Allow is enabled only after you confirm the code matches, and permissions are described in plain language.</li>
+            <li><strong>Diagnostics page</strong> – Settings → Diagnostics → Export Logs… saves the last five hours of DockFlow's own log entries to a text file you can send to support. Nothing is uploaded automatically.</li>
+            <li><strong>CLI honors Skip Reapplying Current Preset</strong> – DockFlowCLI apply now follows the Skip Reapplying Current Preset setting from the app, and --skip-if-active requests the same behavior for a single invocation. A skipped apply exits successfully without rewriting Dock preferences, restarting the Dock or closing applications.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <ul>
+            <li><strong>Bridge and Talk side by side</strong> – Settings → Integrations keeps the original ExtraDock bridge pane. While Talk controls ExtraDock, the pane shows a "Controlled through Talk" card; turn the bridge toggle on to switch back. At launch DockFlow uses Talk when a grant exists and the bridge otherwise, and an ExtraDock build without Talk support keeps working through the bridge.</li>
+            <li><strong>Presets reach ExtraDock reliably</strong> – Right after a preset restarts the macOS Dock, ExtraDock 5 briefly reports its docks as unavailable. DockFlow now retries those docks after 0.4 s and again after 0.9 s so the switch lands; timeouts and disconnects are never replayed.</li>
+            <li><strong>Clearer ExtraDock status</strong> – The ExtraDock card tells apart an ExtraDock that is running but not yet connected, a build without Talk support, an active bridge and a connected ExtraDock with no docks. When some docks did not apply, it reports a count per status and logs each dock's status and message.</li>
+            <li><strong>No surprise launches</strong> – Talk never launches ExtraDock on its own; only an explicit Connect does. Forget Connection removes DockFlow's own copy of the access, while ExtraDock keeps its grant until you revoke DockFlow there.</li>
+        </ul>
+    </div>
     <div data-sparkle-version="1.81">
         <h2>What's New in DockFlow 1.81</h2>
         <h3>New Features</h3>
