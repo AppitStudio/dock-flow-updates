@@ -79,6 +79,13 @@
 </head>
 
 <body>
+    <div data-sparkle-version="1.83">
+        <h2>What's New in DockFlow 1.83</h2>
+        <h3>Bug Fixes</h3>
+        <ul>
+            <li><strong>CLI apply crash</strong> – DockFlowCLI apply crashed with "Illegal instruction" on every run in 1.82, which broke scripts and automations that switch presets from the command line. The Skip Reapplying Current Preset check now reads the app's preferences correctly when the CLI runs from inside DockFlow.app, so apply works again with --name, --id, --native and --skip-if-active. The list command was not affected.</li>
+        </ul>
+    </div>
     <div data-sparkle-version="1.82">
         <h2>What's New in DockFlow 1.82</h2>
         <h3>New Features</h3>
