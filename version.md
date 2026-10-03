@@ -1,6 +1,9 @@
-VERSION: 1.84
+VERSION: 1.85
 DETAILS:
 
-bug fix: Menu Bar Only stays out of the Dock – DockFlow now launches as a menu bar app, so Menu Bar Only mode no longer flashes a Dock icon at launch. Dock app only and With Dock icon still show the Dock icon as before.
-bug fix: No surprise windows on background launches – Show main window on launch now applies only when you open DockFlow yourself. Launches from ExtraBar or ExtraDock over Talk, dockflow:// links, Shortcuts and App Intents stay windowless.
-improved: Modified copies are stopped at launch – DockFlow now detects copies that were modified by a third party, explains what happened, offers a link to download a genuine copy and quits. Genuine copies and existing licenses are unaffected.
+new: Talk integration library - DockFlow, ExtraDock and ExtraBar discover each other automatically (no pairing codes) and reconnect after restarts; works with ExtraDock 4.4.2, ExtraDock 5.1.0 and ExtraBar 1.6.3 or later
+new: Settings → Talk Integrations lists ExtraDock 5, ExtraDock 4 and ExtraBar as separate entries; DockFlow never launches another app or grants access just by discovering it
+improved: Connecting ExtraDock 4 or 5 pins which generation presets control; DockFlow no longer silently switches to the other
+bug fix: Disconnecting or cancelling a connection keeps DockFlow disconnected until you connect again
+improved: Settings sidebar and pages scroll independently and every page opens at its top
+improved: Settings window no longer requires 850 pt of height and is moved back on screen if its saved frame no longer fits
