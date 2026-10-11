@@ -79,6 +79,34 @@
 </head>
 
 <body>
+    <div data-sparkle-version="1.87">
+        <h2>What's New in DockFlow 1.87</h2>
+        <h3>New Features</h3>
+        <ul>
+            <li><strong>Talk setup guide</strong> – Settings → Talk Integrations now has a Setup Guide that walks you through connecting ExtraDock and ExtraBar, with links to the online guide and to Appit Studio support.</li>
+            <li><strong>Monochrome menu bar icon</strong> – A new one-color DockFlow icon that matches light and dark menu bars. It is the default if you never picked an icon; a logo you already chose stays as it is.</li>
+            <li><strong>Software updates in Export Logs</strong> – Settings → Diagnostics → Export Logs now includes DockFlow's update history, so support can help when an update gets stuck.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <ul>
+            <li><strong>Presets don't steal focus</strong> – A preset's Open App action leaves apps that are already running alone and starts the others in the background, so switching presets no longer pulls windows forward.</li>
+            <li><strong>Menu Bar Only stays out of the way</strong> – The main window no longer opens at launch, at login, or when another app wakes DockFlow in the background. Opening DockFlow yourself from Spotlight or Finder still shows it.</li>
+            <li><strong>Smoother ExtraDock reconnects</strong> – When the connection drops, DockFlow reconnects to the ExtraDock that is already running instead of opening ExtraDock again.</li>
+            <li><strong>Faster, more responsive launch</strong> – Checking connected apps and loading and applying Focus presets no longer happen on the main thread, so DockFlow responds right away after it starts.</li>
+            <li><strong>Clearer Talk messages</strong> – Messages about ExtraDock now use ExtraDock's current setting names, Talk Integrations and Apps with access, so the steps match what you see.</li>
+            <li><strong>Better diagnostics</strong> – Export Logs now records how each DockFlow session ended and why ExtraDock connections dropped and reconnected.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+            <li><strong>New ExtraDock docks stay visible</strong> – A dock you create in ExtraDock after saving a preset is no longer hidden when you switch presets. Docks you turned off in a preset stay hidden.</li>
+            <li><strong>Menu bar icon no longer stretched</strong> – Every menu bar icon keeps its real shape.</li>
+            <li><strong>Removed a sidebar button that did nothing</strong> – On macOS 14 and later the main window no longer shows a sidebar toggle that had no effect.</li>
+        </ul>
+        <h3>Privacy</h3>
+        <ul>
+            <li><strong>No third-party crash reporting</strong> – DockFlow no longer includes the Sentry crash reporter.</li>
+        </ul>
+    </div>
     <div data-sparkle-version="1.85">
         <h2>What's New in DockFlow 1.85</h2>
         <h3>New Features</h3>
