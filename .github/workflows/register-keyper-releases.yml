@@ -5,6 +5,8 @@ on:
     paths:
       - appcast.xml
       - scripts/sync_keyper_releases.py
+      - scripts/register_keyper_beta.py
+      - scripts/test_register_keyper_beta.py
       - .github/workflows/register-keyper-releases.yml
   push:
     branches:
@@ -12,6 +14,14 @@ on:
     paths:
       - appcast.xml
   workflow_dispatch:
+    inputs:
+      beta_only:
+        description: "Register only the current `beta` pre-release (skips the appcast sync)"
+        type: boolean
+        default: false
+  release:
+    types:
+      - published
 
 permissions:
   contents: read
@@ -22,9 +32,16 @@ concurrency:
 
 jobs:
   validate-and-register:
+    if: github.event_name != 'release' && !(github.event_name == 'workflow_dispatch' && inputs.beta_only)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Test beta registration
+        if: github.event_name == 'pull_request'
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 -m unittest discover -s scripts -p 'test_register_keyper_beta.py' -v
 
       - name: Validate retained appcast metadata
         run: python3 scripts/sync_keyper_releases.py --appcast appcast.xml --validate-only
@@ -35,3 +52,20 @@ jobs:
           KEYPER_RELEASE_TOKEN: ${{ secrets.KEYPER_RELEASE_TOKEN }}
           KEYPER_RELEASE_ENDPOINT: ${{ vars.KEYPER_RELEASE_ENDPOINT }}
         run: python3 scripts/sync_keyper_releases.py --appcast appcast.xml
+
+  # Betas are replace-style `beta` pre-releases with no appcast change, so the
+  # appcast sync above never sees them. Register them when they are published,
+  # or on demand with a `beta_only` manual run.
+  register-beta:
+    if: >-
+      (github.event_name == 'release' && github.event.release.prerelease && github.event.release.tag_name == 'beta')
+      || (github.event_name == 'workflow_dispatch' && inputs.beta_only)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Register published beta with Keyper
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          KEYPER_RELEASE_TOKEN: ${{ secrets.KEYPER_RELEASE_TOKEN }}
+          KEYPER_RELEASE_ENDPOINT: ${{ vars.KEYPER_RELEASE_ENDPOINT }}
+        run: python3 scripts/register_keyper_beta.py
