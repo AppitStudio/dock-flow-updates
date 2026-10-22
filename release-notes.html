@@ -79,6 +79,24 @@
 </head>
 
 <body>
+    <div data-sparkle-version="1.88">
+        <h2>What's New in DockFlow 1.88</h2>
+        <h3>Improvements</h3>
+        <ul>
+            <li><strong>Fewer Keychain password prompts</strong> – Your license is now stored securely without asking for your Mac password. It moves over on its own and stays active.</li>
+            <li><strong>Your ExtraDock docks are always listed</strong> – DockFlow now shows every ExtraDock dock in your presets, even when ExtraDock hasn't sent an update for a while.</li>
+            <li><strong>Less writing to your disk</strong> – DockFlow no longer rewrites its settings file every minute, and it tidies up the temporary files and old leftovers it created, so it stays light on your Mac over time.</li>
+            <li><strong>Updated updater</strong> – DockFlow now uses Sparkle 2.10, which includes the latest security fixes for app updates.</li>
+            <li><strong>Better update logs for support</strong> – Settings → Diagnostics → Export Logs now records the step where the installer takes over, and shows only DockFlow's own update activity, even when other apps on your Mac use the same updater.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+            <li><strong>No more crash when two AppleScripts run at once</strong> – DockFlow now runs its scripts one at a time (for example a Safari profile preset and the command-line tool install), so they can't collide and close the app.</li>
+            <li><strong>App notes and launch actions stay put</strong> – Notes and launch actions you add to an app keep working whether the app is on your Mac right now or not (for example on an unplugged drive), and saving a preset no longer removes them.</li>
+            <li><strong>Export Logs can't freeze DockFlow</strong> – If the save panel disappears or the chosen location stops responding, DockFlow keeps working and you can simply try the export again.</li>
+        </ul>
+    </div>
+
     <div data-sparkle-version="1.87">
         <h2>What's New in DockFlow 1.87</h2>
         <h3>New Features</h3>
