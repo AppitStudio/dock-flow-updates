@@ -5,6 +5,7 @@ on:
     paths:
       - appcast.xml
       - scripts/sync_keyper_releases.py
+      - scripts/test_stable_release_registration.py
       - scripts/register_keyper_beta.py
       - scripts/test_register_keyper_beta.py
       - .github/workflows/register-keyper-releases.yml
@@ -42,6 +43,9 @@ jobs:
         env:
           PYTHONDONTWRITEBYTECODE: "1"
         run: python3 -m unittest discover -s scripts -p 'test_register_keyper_beta.py' -v
+
+      - name: Test stable release registration
+        run: python3 -m unittest discover -s scripts -p 'test_stable_release_registration.py' -v
 
       - name: Validate retained appcast metadata
         run: python3 scripts/sync_keyper_releases.py --appcast appcast.xml --validate-only
