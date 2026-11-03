@@ -105,6 +105,7 @@ def register_release(endpoint: str, token: str, release: Release) -> int:
             "version": release.version,
             "released_at": release.released_at.isoformat(),
             "download_url": release.download_url,
+            "is_prerelease": False,
         }
     ).encode("utf-8")
     request = urllib.request.Request(
