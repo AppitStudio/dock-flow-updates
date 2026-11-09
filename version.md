@@ -1,14 +1,11 @@
-VERSION: 1.91
+VERSION: 1.94
 DETAILS:
 
-new: App Folders – Group apps into a themed folder that lives in your Dock. Click the folder and a grid of its apps opens right next to it; pick one to launch it. Create one in a preset under Edit Preset → Apps → App Folder, add up to 30 apps and choose from 38 themes. Free for everyone!
-new: AI Assistant – Claude, ChatGPT (Codex), Cursor, VS Code and other AI assistants can now read your presets and, if you allow it, create, edit and apply them for you. Turn it on in Settings → AI Assistant, where one click sets up each assistant. Anything big, like applying or deleting a preset, asks for your approval first.
-new: Move Dock to Locked Display shortcut – Set a hotkey in Settings → Hotkeys to send the Dock straight back to your Lock Dock display.
-new: Protect unsaved work – A new option in Settings → Preset Switching (off by default). When it's on, a preset switch asks apps to quit but never force-quits them, so a "Save changes?" dialog can't lose your work. You also see a preview of what will quit, open and stay before you switch.
-improved: Lock Dock at login – If your monitor is already connected when you log in, DockFlow moves the Dock to your locked display right away. Turning Lock Dock on also moves it straight away.
-improved: Preset editor stays in sync – If a preset changes while its editor is open, the editor shows the change instead of saving its old copy over it. A preset name that's already used is refused.
-improved: Quieter dockflow:// links – A link that can't be opened now shows a notification instead of an alert, so Raycast, Shortcuts and Keyboard Maestro keep working.
-bug fix: Apps in your App Folders stay open – With "Close apps that aren't in the preset" on, apps that are inside one of the preset's App Folders are no longer closed when you switch to it.
-bug fix: Your ExtraDock docks stay visible – A preset can no longer hide every dock you have turned on in ExtraDock, so ExtraDock can't end up looking empty after a preset switch or a restart.
-bug fix: Lock Dock remembers your display – After a monitor sleeps, wakes or reconnects, Lock Dock goes back to the display you chose.
-bug fix: Relocate Locked Dock – The menu bar item is greyed out while Lock Dock is off, instead of moving the Dock to the main display.
+new: Also quit apps that are only in App Folders – A new option in Settings → Preset Switching, right under "Close apps that aren't in the preset" (off by default). Turn it on and apps that the next preset only has inside an App Folder quit too, so your Dock starts clean. Apps placed directly in the preset, Always Keep Open apps and Apple's essential apps stay open, and Protect unsaved work still asks before anything quits.
+new: AI assistants can set up your App Folders – Claude or another AI assistant connected to DockFlow can now list your App Folders, create and rename them, change their theme, add, remove and reorder the apps inside, and add a folder to a preset. Try "split my App Dev preset into Code, Backend and Comms folders." Turn on Allow Changes in Settings → AI Assistant to let it make changes. Removing an app or deleting a folder asks for your approval first, and a deleted folder is backed up so it can be brought back.
+new: A new color picker for Custom Spacers – Every color choice in Edit Preset → Spacer → Custom Spacer… now opens Appit Studio's own color picker right next to the button, instead of the separate macOS Colors window. It has 40 palette colors, your recent colors, hex input and an eyedropper.
+improved: App Folder editor stays in sync – If an AI assistant changes a folder while you have it open, the editor shows the change right away, and saving keeps both your edits and the assistant's.
+improved: A tidier Design Your Icon step – Background and Text Color each have a single color button, and the old rows of color dots now live in the picker's palette.
+bug fix: Preset Exclusions work the way the setting says – Leaving an excluded preset no longer closes your apps, and switching to an excluded preset closes apps as usual.
+bug fix: Glass and Transparent spacers keep their look – Editing a saved Glass or Transparent Custom Spacer no longer turns it solid.
+bug fix: Lock Dock on macOS 27 – Lock Dock now asks for "Device Control and Data Access", the new name of the Accessibility permission on macOS 27.
